@@ -105,7 +105,7 @@
         #chat-box.box-body.chat
           / chat item
           .item
-            %img.online{:alt => "user image", :src => "img/avatar.png"}/
+            =image_tag 'avatar.png', class: 'online', alt: 'user image' 
             %p.message
               %a.name{:href => "#"}
                 %small.text-muted.pull-right
@@ -125,7 +125,7 @@
           / /.item
           / chat item
           .item
-            %img.offline{:alt => "user image", :src => "img/avatar2.png"}/
+            =image_tag 'avatar2.png', class: 'offline', alt: 'user image'
             %p.message
               %a.name{:href => "#"}
                 %small.text-muted.pull-right
@@ -138,7 +138,7 @@
           / /.item
           / chat item
           .item
-            %img.offline{:alt => "user image", :src => "img/avatar3.png"}/
+            =image_tag 'avatar3.png', class: 'offline', alt: 'user image'             
             %p.message
               %a.name{:href => "#"}
                 %small.text-muted.pull-right
