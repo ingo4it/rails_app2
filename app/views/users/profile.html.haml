@@ -187,30 +187,49 @@
                         \&nbsp;&nbsp;·&nbsp;&nbsp;
                         %a{:href => "#"} Reply
                     .comment
-                      %img.comment-avatar{:alt => "", :src => "assets/demo/avatars/4.jpg"}
-                        .comment-body
-                          .comment-text
-                            .comment-heading
-                              %a{:href => "#", :title => ""} Timothy Owens
-                              %span 14 hours ago
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-                          .comment-footer
-                            %a{:href => "#"}>
-                              %i.fa.fa-thumbs-o-up
-                            \&nbsp;&nbsp;
-                            %a{:href => "#"}
-                              %i.fa.fa-thumbs-o-down
-                            \&nbsp;&nbsp;·&nbsp;&nbsp;
-                            %a{:href => "#"} Reply
-                        / / .comment-body
+                      =image_tag 'demo/avatars/4.jpg', class: 'comment-avatar', alt: ''
+                    
+                      .comment-body
+                        .comment-text
+                          .comment-heading
+                            %a{:href => "#", :title => ""} Timothy Owens
+                            %span 14 hours ago
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                        .comment-footer
+                          %a{:href => "#"}>
+                            %i.fa.fa-thumbs-o-up
+                          \&nbsp;&nbsp;
+                          %a{:href => "#"}
+                            %i.fa.fa-thumbs-o-down
+                          \&nbsp;&nbsp;·&nbsp;&nbsp;
+                          %a{:href => "#"} Reply                        
                     .comment
-                      %img.comment-avatar{:alt => "", :src => "assets/demo/avatars/5.jpg"}
+                      =image_tag 'demo/avatars/5.jpg', class: 'comment-avatar', alt: ''
+                    
+                      .comment-body
+                        .comment-text
+                          .comment-heading
+                            %a{:href => "#", :title => ""} Denise Steiner
+                            %span 14 hours ago
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                        .comment-footer
+                          %a{:href => "#"}>
+                            %i.fa.fa-thumbs-o-up
+                          \&nbsp;&nbsp;
+                          %a{:href => "#"}
+                            %i.fa.fa-thumbs-o-down
+                          \&nbsp;&nbsp;·&nbsp;&nbsp;
+                          %a{:href => "#"} Reply
+                      / / .comment-body
+                      .comment
+                        =image_tag 'demo/avatars/1.jpg', class: 'comment-avatar', alt: ''
+                      
                         .comment-body
                           .comment-text
                             .comment-heading
-                              %a{:href => "#", :title => ""} Denise Steiner
+                              %a{:href => "#", :title => ""} John Doe
                               %span 14 hours ago
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                           .comment-footer
                             %a{:href => "#"}>
                               %i.fa.fa-thumbs-o-up
@@ -219,25 +238,7 @@
                               %i.fa.fa-thumbs-o-down
                             \&nbsp;&nbsp;·&nbsp;&nbsp;
                             %a{:href => "#"} Reply
-                        / / .comment-body
-                        .comment
-                          %img.comment-avatar{:alt => "", :src => "assets/demo/avatars/1.jpg"}
-                            .comment-body
-                              .comment-text
-                                .comment-heading
-                                  %a{:href => "#", :title => ""} John Doe
-                                  %span 14 hours ago
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                              .comment-footer
-                                %a{:href => "#"}>
-                                  %i.fa.fa-thumbs-o-up
-                                \&nbsp;&nbsp;
-                                %a{:href => "#"}
-                                  %i.fa.fa-thumbs-o-down
-                                \&nbsp;&nbsp;·&nbsp;&nbsp;
-                                %a{:href => "#"} Reply
-                            / / .comment-body
-                        / / .comment
+                            
                   .comment
                     =image_tag 'demo/avatars/3.jpg', class: 'comment-avatar', alt: ''                      
                     .comment-body
@@ -279,7 +280,8 @@
                       shared an image on
                       %a{:href => "#"} The Gallery
                       .tl-wide.text-center{:style => "padding: 10px;margin-top:15px;margin-bottom: 15px;background: #f1f1f1"}
-                        %img{:alt => "", :src => "assets/demo/signin-bg-5.jpg", :style => "max-height: 150px;max-width: 100%;"}
+                        
+                        =image_tag 'demo/signin-bg-5.jpg', alt: '', style: 'max-height: 150px;max-width: 100%;'
                       %i.text-muted.text-sm Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     / / .tl-body
                   / / .tl-entry
@@ -287,7 +289,7 @@
                     .tl-time
                       3h ago
                     .tl-icon.bg-success
-                      %img{:alt => "", :src => "assets/demo/avatars/2.jpg"}/
+                      =image_tag 'demo/avatars/2.jpg', alt: ''                       
                     .panel.tl-body
                       %a{:href => "#"} Robert Jang
                       commented on
@@ -396,13 +398,13 @@
                     %br
                       %a.follower-username{:href => "#"} @jdoe
                 .follower
-                  %img.follower-avatar{:alt => "", :src => "assets/demo/avatars/3.jpg"}
-                    .body
-                      .follower-controls
-                        %a.btn.btn-sm.btn-outline{:href => "#"} Follow
-                      %a.follower-name{:href => "#"} Michelle Bortz
-                      %br
-                        %a.follower-username{:href => "#"} @mbortz
+                  =image_tag 'demo/avatars/3.jpg', class: 'follower-avatar', alt: ''
+                  .body
+                    .follower-controls
+                      %a.btn.btn-sm.btn-outline{:href => "#"} Follow
+                    %a.follower-name{:href => "#"} Michelle Bortz
+                    %br
+                      %a.follower-username{:href => "#"} @mbortz
                 .follower
                   =image_tag 'demo/avatars/4.jpg', class: 'follower-avatar', alt: ''
                   .body
@@ -534,13 +536,14 @@
                     %br
                       %a.follower-username{:href => "#"} @jdoe
                 .follower
-                  %img.follower-avatar{:alt => "", :src => "assets/demo/avatars/3.jpg"}
-                    .body
-                      .follower-controls
-                        %a.btn.btn-sm.btn-outline{:href => "#"} Follow
-                      %a.follower-name{:href => "#"} Michelle Bortz
-                      %br
-                        %a.follower-username{:href => "#"} @mbortz
+                  =image_tag 'demo/avatars/3.jpg', class: 'follower-avatar', alt: ''
+                
+                  .body
+                    .follower-controls
+                      %a.btn.btn-sm.btn-outline{:href => "#"} Follow
+                    %a.follower-name{:href => "#"} Michelle Bortz
+                    %br
+                      %a.follower-username{:href => "#"} @mbortz
                 .follower
                   =image_tag 'demo/avatars/4.jpg', class: 'follower-avatar', alt: ''
                   .body
