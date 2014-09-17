@@ -1,0 +1,47 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self 
+ *= require_tree .
+
+ * AdminLTE Theme
+
+ *= require admin_lte/css/bootstrap.min
+ *= require admin_lte/css/font-awesome.min
+ *= require admin_lte/css/ionicons.min
+ *= require admin_lte/css/morris/morris
+ *= require admin_lte/css/jvectormap/jquery-jvectormap-1.2.2
+ *= require admin_lte/css/datepicker/datepicker3
+ *= require admin_lte/css/daterangepicker/daterangepicker-bs3
+ *= require admin_lte/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min 
+ *= require admin_lte/css/AdminLTE.css 
+
+ * Pixel Admin Theme
+
+ *= require pixel_admin/stylesheets/pixel-admin.min
+ *= require pixel_admin/stylesheets/widgets.min
+ *= require pixel_admin/stylesheets/widgets.min
+ *= require pixel_admin/stylesheets/pages.min
+ *= require pixel_admin/stylesheets/rtl.min
+ *= require pixel_admin/stylesheets/themes.min
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
