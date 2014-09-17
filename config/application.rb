@@ -21,7 +21,7 @@ module ProductCto
     # config.i18n.default_locale = :de
     # config.assets.paths << Rails.root.join('vendor', 'assets', 'theme', 'admin_lte', 'img')
     config.assets.paths << Rails.root.join('vendor', 'assets', 'theme')
-    
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
   end
 end
