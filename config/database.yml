@@ -83,5 +83,6 @@ production:
   encoding: unicode
   database: supranimbus
   pool: 5
-  username: 
-  password: 
+  username: postgres
+  password: password
+  host: localhost
